@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DR.FfmpegClient", "DR.FfmpegClient\DR.FfmpegClient.csproj", "{5C31C593-10EB-45F8-B96B-3291316B85FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution items", "{B825E8B3-0967-449B-813E-1C3ED76260E9}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		Directory.Build.props = Directory.Build.props
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DR.FfmpegClient.Test", "DR.FfmpegClient.Test\DR.FfmpegClient.Test.csproj", "{40D9A9B3-130B-42AC-A28B-C92E4A67FD16}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C31C593-10EB-45F8-B96B-3291316B85FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C31C593-10EB-45F8-B96B-3291316B85FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C31C593-10EB-45F8-B96B-3291316B85FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C31C593-10EB-45F8-B96B-3291316B85FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40D9A9B3-130B-42AC-A28B-C92E4A67FD16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40D9A9B3-130B-42AC-A28B-C92E4A67FD16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40D9A9B3-130B-42AC-A28B-C92E4A67FD16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40D9A9B3-130B-42AC-A28B-C92E4A67FD16}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB0AAAA3-4571-4C85-AD20-366C7AAF9C63}
+	EndGlobalSection
+EndGlobal

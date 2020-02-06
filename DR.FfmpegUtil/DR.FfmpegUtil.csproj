@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -7,6 +7,11 @@
     <DebugType>full</DebugType>
     <IncludeSource>true</IncludeSource>
     <IncludeSymbols>true</IncludeSymbols>
+    <VersionPrefix>1.0.1</VersionPrefix>
+    <VersionSuffix>localhost</VersionSuffix>
+    <Company>DR (Danish Broadcasting Corporation)</Company>
+    <Authors>DR TU</Authors>
+    <Copyright>DR (Danish Broadcasting Corporation)</Copyright>
   </PropertyGroup>
 
   <ItemGroup>

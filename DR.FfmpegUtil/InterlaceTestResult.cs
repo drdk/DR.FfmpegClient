@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace DR.FfmpegClient
+namespace DR.FfmpegUtil
 {
     public class InterlaceTestResult
     {
@@ -37,7 +37,7 @@ namespace DR.FfmpegClient
             var mfd = frameDetectionRegEx.Match(idetLines[2]);
             if (!rm.Success|| !sfd.Success || !mfd.Success)
             {
-                throw new FfmpegClientException($"Failed to parse: {ffmpegOutput}");
+                throw new FfmpegUtilException($"Failed to parse: {ffmpegOutput}");
             }
             RepeatedFields = new RepeatedFieldsResult { Neither = int.Parse(rm.Groups["neither"].Value), Top = int.Parse(rm.Groups["top"].Value), Bottom = int.Parse(rm.Groups["bottom"].Value)};
             SingleFrameDetection = new FrameDetectionResult { TFF = int.Parse(sfd.Groups["tff"].Value), BFF = int.Parse(sfd.Groups["bff"].Value), Progressive = int.Parse(sfd.Groups["progressive"].Value), Undetermined = int.Parse(sfd.Groups["udetermined"].Value) };

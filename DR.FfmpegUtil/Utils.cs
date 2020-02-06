@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using Medallion.Shell;
 
-namespace DR.FfmpegClient
+namespace DR.FfmpegUtil
 {
     public static class Utils
 
@@ -15,6 +15,17 @@ namespace DR.FfmpegClient
                 await cmd.Task;
                 return new InterlaceTestResult(cmd.Result.StandardError);
             }
+        }
+        public static async Task<bool> FileIsInterlaced(string filePath)
+        {
+            var result = await TestForInterlaced(filePath);
+
+            if (result.MultiFrameDetection.TFF > 50)
+            {
+                return true;
+            }
+
+            return false;
         }
     }
 }

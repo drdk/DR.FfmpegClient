@@ -9,9 +9,7 @@
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
-
   <ItemGroup>
     <None Include="../../LICENSE" Pack="true" Visible="false" PackagePath=""/>
   </ItemGroup>
-
 </Project>

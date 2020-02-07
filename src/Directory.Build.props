@@ -3,7 +3,7 @@
     <Copyright>DR (Danish Broadcasting Corporation)</Copyright>
     <Company>DR (Danish Broadcasting Corporation)</Company>
     <Authors>DR TU - Ondemand Team</Authors>
-    <VersionPrefix>1.0.0</VersionPrefix>
+    <VersionPrefix>1.0.2</VersionPrefix>
     <VersionSuffix>localhost</VersionSuffix>
     <RepositoryUrl>https://github.com/drdk/DR.FfmpegUtil</RepositoryUrl>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>

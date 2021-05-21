@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.IO;
 using System.Threading.Tasks;
 using NUnit.Framework;
 
@@ -31,6 +33,15 @@ namespace DR.FfmpegUtil.Test
             Assert.IsFalse(res);
         }
 
-
+        public static IEnumerable<string> GertTestSet() =>
+            Directory.GetFiles(@"\\net\nas\odtest\Testkit\FFmpegUtilTestFiles\25p-pakketsom-50i");
+       
+        [TestCaseSource(nameof(GertTestSet))]
+        public async Task Gert_Progressive_TestSet(string file)
+        {
+          
+                var res = await Utils.FileIsInterlaced(file);
+                Assert.IsFalse(res, $"{file} not detected as progressive.");
+        }
     }
 }

@@ -35,6 +35,11 @@ namespace DR.FfmpegUtil
             var rm = repeatedFieldRegEx.Match(idetLines[0]);
             var sfd = frameDetectionRegEx.Match(idetLines[1]);
             var mfd = frameDetectionRegEx.Match(idetLines[2]);
+
+            System.Diagnostics.Debug.WriteLine(rm.Value);
+            System.Diagnostics.Debug.WriteLine(sfd.Value);
+            System.Diagnostics.Debug.WriteLine(mfd.Value);
+
             if (!rm.Success|| !sfd.Success || !mfd.Success)
             {
                 throw new FfmpegUtilException($"Failed to parse: {ffmpegOutput}");

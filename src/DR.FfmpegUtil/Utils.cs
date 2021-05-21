@@ -20,11 +20,11 @@ namespace DR.FfmpegUtil
                 return new InterlaceTestResult(cmd.Result.StandardError);
             }
         }
-        public static async Task<bool> FileIsInterlaced(string filePath)
+        public static async Task<bool> FileIsInterlaced(string filePath, int framesToTest = 300)
         {
-            var result = await TestForInterlaced(filePath);
+            var result = await TestForInterlaced(filePath,framesToTest);
 
-            if (result.MultiFrameDetection.TFF > 50)
+            if (result.MultiFrameDetection.TFF / (float) framesToTest > 0.5f)
             {
                 return true;
             }
